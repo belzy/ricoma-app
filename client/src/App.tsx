@@ -1,11 +1,34 @@
-import * as React from "react";
-import './assets/css/index.css'
+import React from "react";
+import {
+  Home,
+  Products,
+} from './pages';
+import {
+  Routes,
+  Route
+} from 'react-router-dom';
+import { 
+  Footer,
+  MobileMenu, 
+  Navbar 
+} from "./components";
 
-// const reactLogo = require("./../assets/img/react_logo.svg");
+const App = (): React.ReactElement => (
+  <div>
+    <Navbar />
+    <Routes>
+      <Route path='/' element={ <Home /> } />
 
-const App = () => (
-  <div className="app">
-    <h1 className="text-3xl font-bold underline test">Hello World!</h1>
+      <Route path='/products' element={ <Products /> } />
+
+      <Route path='' element={ null } />
+    </Routes>
+    <Footer />
+
+    <div className='absolute fixed h-screen w-full top-0 pointer-events-none overflow-y-hidden'>
+      <MobileMenu />
+
+    </div>
   </div>
 );
 

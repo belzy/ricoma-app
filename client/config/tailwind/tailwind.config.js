@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["../../src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -9,6 +9,20 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
+    },
+    extend: {
+      colors: {
+        'primary-blue': '#002045',
+        'primary-blue-hover': '#0F2E69',
+        'secondary-blue': '#0F64C8',
+        'accent-orange': '#FE8101',
+        'accent-blue': '#162EC0',
+        'accent-gradient-start': '#FF7200',
+        'accent-gradient-end': '#FC9500',
+        'custom-gray': '#A0A2A6',
+        'custom-gray-2': '#6E798C',
+        'primary-dark': '#131313'
+      }
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -348,33 +362,8 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      sans: [
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: [
-        'ui-monospace',
-        'SFMono-Regular',
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
-      ],
+      sans: ['Open Sans', 'sans-serif'],
+      serif: ['Open Sans', 'serif']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
