@@ -42,7 +42,7 @@
   and view the backend GraphQL studio at `http://localhost:8080`
 
   ### Authentication
-  In order to qury the API, you'll need to set the Authorization header with your request. Login as a company with the query:
+  In order to query the API, you'll need to set the Authorization header with your request. Login as a company with the query:
   ```GraphQL
     query Login {
       companyLogin(name: "Company One", password: "letmein123")
