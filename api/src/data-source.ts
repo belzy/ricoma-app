@@ -10,9 +10,10 @@ import {
 } from './entity';
 
 const dbConfig = {
-    USERNAME: process.env.DB_USERNAME,
-    PASSWORD: process.env.DB_PASSWORD,
-    DATABASE: process.env.DB_NAME,
+    HOST: process.env.DB_HOST,
+    USERNAME: process.env.POSTGRES_USER,
+    PASSWORD: process.env.POSTGRES_PASSWORD,
+    DATABASE: process.env.POSTGRES_DB,
 };
 
 const entities = [
@@ -26,7 +27,7 @@ const entities = [
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: "localhost",
+    host: dbConfig['HOST'],
     port: 5432,
     username: dbConfig['USERNAME'],
     password: dbConfig['PASSWORD'],

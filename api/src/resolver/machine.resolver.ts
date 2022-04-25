@@ -212,9 +212,9 @@ export class MachineResolver {
   }
 
   @Authorized()
-  @Mutation(() => Boolean)
+  @Mutation(() => String)
   async deleteMachine(
-    @Arg('machine_id') machine_id: string,
+    @Arg('machine_id') machine_id: number,
     @Ctx() ctx,
   ) {
 
@@ -222,7 +222,13 @@ export class MachineResolver {
 
     const company = await AppDataSource.manager.findBy(Company, { id: company_id })   
 
-    return await AppDataSource.manager.delete(Machine, { company, machine_id }) ? 'Deleted' : 'Error deleting machine';
+    const machineRepo = await AppDataSource.manager.getRepository(Machine);
+
+    const machine = await machineRepo.findOneBy({ company, id: machine_id });
+
+    if (!machine) return 'Machine Does Not Exist';
+
+    return await machineRepo.remove(machine) ? 'Deleted' : 'Error deleting machine';
 
   }
 }

@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+
+  api:
+    container_name: ricoma-api
+    env_file: ./api/.env
+    # restart: always
+    build: ./api
+    ports: 
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - ricoma
+  
+
+  client:
+    container_name: ricoma-client
+    # restart: always
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - ricoma
+
+  postgres:
+    container_name: db
+    env_file: ./api/.env
+    image: postgres
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks:
+      - ricoma
+
+volumes:
+  db:
+    driver: local
+
+networks:
+  ricoma:
+    driver: bridge

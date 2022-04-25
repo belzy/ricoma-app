@@ -100,7 +100,7 @@ const CartMenu: React.FC<CartMenuProps> = ({ cartMenuIsOpen, setCartMenuIsOpen }
 };
 
 const Navbar = (): React.ReactElement => {
-  const [cartMenuIsOpen, setCartMenuIsOpen] = useState(true);
+  const [cartMenuIsOpen, setCartMenuIsOpen] = useState(false);
 
   return (
     <nav className='bg-primary-blue'>

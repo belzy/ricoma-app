@@ -7,6 +7,7 @@ import {
   PrimaryGeneratedColumn, 
   Column, 
   OneToMany, 
+  JoinColumn
 } from "typeorm";
 import { Machine } from './Machine.entity';
 
@@ -27,6 +28,7 @@ export class Company {
 
   @Field(type => [Machine])
   @OneToMany(() => Machine, (machine) => machine.company)
+  @JoinColumn()
   machines: Machine[];
 
 }

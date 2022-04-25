@@ -5,10 +5,11 @@
    "main": "index.ts",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "",
-      "start": "",
+      "build": "tsc --project ./src/index.ts --outFile dist/index.js",
+      "start": "ts-node src/index.ts",
       "dev": "nodemon --exec ts-node src/index.ts",
-      "typeorm": "typeorm-ts-node-commonjs"
+      "typeorm": "typeorm-ts-node-commonjs",
+      "seed": "ts-node src/seed/index.ts"
    },
    "keywords": [],
    "author": "",
