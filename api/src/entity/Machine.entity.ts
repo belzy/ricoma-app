@@ -30,11 +30,11 @@ export class Machine {
   model: string;
 
   @Field()
-  @Column()
+  @Column('float')
   price: number;
 
   @Field()
-  @Column()
+  @Column('float')
   sale_price: number;
 
   @Field()
@@ -45,28 +45,24 @@ export class Machine {
   @Column("text")
   info: string;
 
-  @Field(type => Int)
+  @Field(type => Company)
   @ManyToOne(() => Company, (company) => company.machines)
   company: Company;
 
-  @Field(type => Int)
-  @OneToOne(() => Color)
-  @JoinColumn()
+  @Field(type => Color)
+  @ManyToOne(() => Color, (color) => color.machines)
   color: Color;
 
-  @Field(type => Int)
-  @OneToOne(() => Size)
-  @JoinColumn()
+  @Field(type => Size)
+  @ManyToOne(() => Size, (size) => size.machines)
   size: Size;
 
-  @Field(type => Int)
-  @OneToOne(() => Type)
-  @JoinColumn()
+  @Field(type => Type)
+  @ManyToOne(() => Type, (type) => type.machines)
   type: Type;
 
-  @Field(type => Int)
-  @OneToOne(() => NeedleCount)
-  @JoinColumn()
+  @Field(type => NeedleCount)
+  @ManyToOne(() => NeedleCount, (needle_count) => needle_count.machines)
   needle_count: NeedleCount;
   
 }

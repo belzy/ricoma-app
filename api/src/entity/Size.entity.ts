@@ -3,8 +3,9 @@ import {
   Entity, 
   PrimaryGeneratedColumn, 
   Column,
-  ManyToOne
+  OneToMany,
 } from "typeorm";
+import { Machine } from './';
 
 @Entity()
 @ObjectType()
@@ -18,4 +19,7 @@ export class Size {
   @Column()
   size: string;
   
+  @Field(type => [Machine])
+  @OneToMany(() => Machine, (machine) => machine.size)
+  machines: Machine[];
 }

@@ -7,7 +7,9 @@ import {
   Entity, 
   PrimaryGeneratedColumn, 
   Column,
+  OneToMany,
 } from "typeorm";
+import { Machine } from './';
 
 @Entity()
 @ObjectType()
@@ -19,6 +21,9 @@ export class NeedleCount {
 
   @Field()
   @Column()
-  needle_count: string;
+  needle_count: number;
 
+  @Field(type => [Machine])
+  @OneToMany(() => Machine, (machine) => machine.needle_count)
+  machines: Machine[];
 }

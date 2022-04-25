@@ -6,7 +6,7 @@ import {
   Entity, 
   PrimaryGeneratedColumn, 
   Column, 
-  OneToMany 
+  OneToMany, 
 } from "typeorm";
 import { Machine } from './Machine.entity';
 
@@ -19,10 +19,9 @@ export class Company {
   id: number;
 
   @Field()
-  @Column()
+  @Column({ unique: true })
   name: string;
 
-  @Field()
   @Column()
   password: string;
 
