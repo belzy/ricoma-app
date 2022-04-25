@@ -12,13 +12,13 @@ const PORT = process.env.PORT || '8080';
 
 import { seed } from './seed';
 
-try {
-    seed()
-} catch(err) {
-    console.log('Error Seeding');
-}
-
 AppDataSource.initialize().then(async () => {
+    
+    try {
+        seed()
+    } catch(err) {
+        console.log('Error Seeding');
+    }
 
     const schema = await buildSchema({
         resolvers: [CompanyResolver, MachineResolver],

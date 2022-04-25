@@ -16,7 +16,7 @@ export async function seed() {
 
   console.log('[server] Seeding data...')
 
-  await AppDataSource.initialize().then(async () => {
+  // await AppDataSource.initialize().then(async () => {
 
     const companyOne = new Company();
     companyOne.name = 'Company One'
@@ -62,6 +62,6 @@ export async function seed() {
       await AppDataSource.manager.save(machine);
 
     }
-  }).catch(error => console.log(error));
+  // }).catch(error => console.log(error));
 
 }
