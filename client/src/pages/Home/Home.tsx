@@ -127,7 +127,7 @@ const HeaderBox: React.FC = () => {
 
           <div>
             <h4 className='text-primary-blue font-bold text-[1.563rem] font-family-rubik'>24/7</h4>
-            <p className='font-semibold text-xl text-[#4F5665]'>Lorem Ipsum</p>
+            <p className='font-semibold text-xl text-[#4F5665]'>LOREM IPSUM</p>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ const HeaderBox: React.FC = () => {
 
           <div>
             <h4 className='text-primary-blue font-bold text-[1.563rem] font-family-rubik'>30+</h4>
-            <p className='font-semibold text-xl text-[#4F5665]'>Lorem Ipsum</p>
+            <p className='font-semibold text-xl text-[#4F5665]'>LOREM IPSUM</p>
           </div>
         </div>
 
@@ -149,7 +149,7 @@ const HeaderBox: React.FC = () => {
 
           <div>
             <h4 className='text-primary-blue font-bold text-[1.563rem] font-family-rubik'>50+</h4>
-            <p className='font-semibold text-xl text-[#4F5665]'>Lorem Ipsum</p>
+            <p className='font-semibold text-xl text-[#4F5665]'>LOREM IPSUM</p>
           </div>
         </div>
 
