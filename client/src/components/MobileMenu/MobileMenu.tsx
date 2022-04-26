@@ -23,7 +23,7 @@ const MobileMenu: React.FC = () => {
   return (
     <div
       className={`
-        pointer-events-auto flex absolute right-0 md:hidden flex-col items-start 
+        pointer-events-auto flex fixed right-0 md:hidden flex-col items-start 
         bg-primary-blue w-80 h-full ${ mobileMenuIsOpen ? 'translate-x-0' : 'translate-x-full' } 
         border-l border-white transition-all duration-150 ease-in-out
       `}>
