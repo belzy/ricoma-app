@@ -12,9 +12,9 @@ const Products: React.FC = () => {
 
   return (
     <>
-      <section className='xl:container mx-auto py-20 px-7'>
+      <section className='max-w-[1300px] mx-auto py-20 px-7'>
 
-        <h1 className='text-primary-blue font-bold text-6xl mb-5'>Dui augue lectus</h1>
+        <h1 className='text-primary-blue font-bold text-[2.5rem] md:text-6xl mb-5'>Dui augue lectus</h1>
 
         <p className='text-primary-blue font-light text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa leo<br /> nec ultrices sit risus nisi non fermentum morbi. Tristique.</p>
 

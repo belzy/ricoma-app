@@ -104,7 +104,7 @@ const Navbar = (): React.ReactElement => {
 
   return (
     <nav className='bg-primary-blue'>
-      <div className='xl:container mx-auto px-7 flex justify-between items-center h-16'>
+      <div className='max-w-[1300px] mx-auto px-7 flex justify-between items-center h-16'>
 
         {/* Logo */}
         <Link to='/'>

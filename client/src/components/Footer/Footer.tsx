@@ -129,7 +129,7 @@ const FooterBottom: React.FC = () => {
 
   return (
     <div className='bg-primary-dark md:bg-primary-blue py-6 md:py-10'>
-      <div className='flex flex-col md:flex-row justify-between items-center xl:container mx-auto px-7'>
+      <div className='flex flex-col md:flex-row justify-between items-center mx-auto px-7'>
 
       <div className='flex justify-between w-64 md:w-72 mb-6 md:mb-0'>
         <Link to='#' className='text-custom-gray md:text-white font-size-xs hover:text-accent-orange'>Terms of Service</Link>
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
 
       {/* Large Footer */}
       <div className='hidden md:block bg-primary-blue py-20'>
-        <div className='xl:container mx-auto px-7 flex justify-between'>
+        <div className='mx-auto px-7 flex justify-between max-w-[1300px]'>
           <CompanyInfo />
 
           <ProductsMenu />
