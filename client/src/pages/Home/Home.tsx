@@ -163,7 +163,7 @@ const Home = (): React.ReactElement => {
     <div>
 
       {/* HEADER */}
-      <header className='min-h-[600px] bg-cover' style={{ backgroundImage: `url(${ HeaderBackground.default })` }}>
+      <header className='min-h-[600px] bg-cover bg-right-top' style={{ backgroundImage: `url(${ HeaderBackground.default })` }}>
 
         <div className='max-w-[1300px] mx-auto px-7 pt-5 md:pt-16  flex flex-col md:flex-row justify-center'>
 

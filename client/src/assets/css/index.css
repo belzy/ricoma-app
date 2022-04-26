@@ -1193,6 +1193,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: cover;
 }
 
+.bg-right-top {
+  background-position: right top;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
