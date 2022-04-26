@@ -14,6 +14,19 @@ import {
   Navbar 
 } from "./components";
 
+// Add favicon
+const Favicon = require('./assets/img/ricoma-favicon.svg');
+(() => {
+
+  const head = document.head;
+  const faviconTag = document.createElement('link');
+  faviconTag.rel = 'icon';
+  faviconTag.type = 'image/svg';
+  faviconTag.href = `${ Favicon.default }`;
+  head.appendChild(faviconTag);
+
+})();
+
 const App = (): React.ReactElement => (
   <div>
     <Navbar />
