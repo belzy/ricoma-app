@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.font-family-rubik {
+  font-family: 'Rubik', 'Open sans', sans-serif !important;
+}
+
 .navbar-hamburger {
   min-width: 41px;
   min-height: 27px;

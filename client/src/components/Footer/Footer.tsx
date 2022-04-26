@@ -129,14 +129,14 @@ const FooterBottom: React.FC = () => {
 
   return (
     <div className='bg-primary-dark md:bg-primary-blue py-6 md:py-10'>
-      <div className='flex flex-col md:flex-row justify-between items-center mx-auto px-7'>
+      <div className='flex flex-col md:flex-row justify-between items-center mx-auto px-7 max-w-[1300px]'>
 
-      <div className='flex justify-between w-64 md:w-72 mb-6 md:mb-0'>
-        <Link to='#' className='text-custom-gray md:text-white font-size-xs hover:text-accent-orange'>Terms of Service</Link>
-        <Link to='#' className='text-custom-gray md:text-white font-size-xs text-right hover:text-accent-orange'>Privacy Policy</Link>
-      </div>
+        <div className='flex justify-between w-64 md:w-72 mb-6 md:mb-0'>
+          <Link to='#' className='text-custom-gray md:text-white font-size-xs hover:text-accent-orange'>Terms of Service</Link>
+          <Link to='#' className='text-custom-gray md:text-white font-size-xs text-right hover:text-accent-orange'>Privacy Policy</Link>
+        </div>
 
-      <p className='text-custom-gray md:text-white font-size-xs'>©2022 Ricoma International.</p>
+        <p className='text-custom-gray md:text-white font-size-xs'>©2022 Ricoma International.</p>
 
       </div>
     </div>

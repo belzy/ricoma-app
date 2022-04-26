@@ -462,6 +462,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Montserrat', sans-serif;
 }
 
+.font-family-rubik {
+  font-family: 'Rubik', 'Open sans', sans-serif !important;
+}
+
 .navbar-hamburger {
   min-width: 41px;
   min-height: 27px;
@@ -589,6 +593,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -34px;
 }
 
+.top-\[50\] {
+  top: 50;
+}
+
+.top-\[50px\] {
+  top: 50px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[1600px\] {
+  top: 1600px;
+}
+
+.top-\[160px\] {
+  top: 160px;
+}
+
+.top-\[140px\] {
+  top: 140px;
+}
+
+.top-\[180px\] {
+  top: 180px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -611,6 +647,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-\[2px\] {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+.my-\[18px\] {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .mt-12 {
@@ -733,6 +779,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
+.mr-\[36px\] {
+  margin-right: 36px;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.mb-\[-100px\] {
+  margin-bottom: -100px;
+}
+
+.mb-\[-200px\] {
+  margin-bottom: -200px;
+}
+
+.mt-\[-100px\] {
+  margin-top: -100px;
+}
+
+.mt-\[-180px\] {
+  margin-top: -180px;
+}
+
 .block {
   display: block;
 }
@@ -809,8 +879,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24rem;
 }
 
+.h-\[126px\] {
+  height: 126px;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
 .min-h-\[600px\] {
   min-height: 600px;
+}
+
+.min-h-\[800px\] {
+  min-height: 800px;
 }
 
 .w-full {
@@ -873,6 +959,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 51px;
 }
 
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[55px\] {
+  width: 55px;
+}
+
+.min-w-\[800px\] {
+  min-width: 800px;
+}
+
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
@@ -881,8 +979,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 415px;
 }
 
-.max-w-\[400px\] {
-  max-width: 400px;
+.max-w-\[1280px\] {
+  max-width: 1280px;
 }
 
 .flex-1 {
@@ -961,6 +1059,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-\[4px\] {
   border-radius: 4px;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-t-2xl {
@@ -1069,6 +1171,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 208 2 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EEEFF2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 239 242 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1171,6 +1278,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
+.py-\[37px\] {
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.px-\[24px\] {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1203,8 +1320,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 11px;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-\[-100px\] {
+  padding-bottom: -100px;
 }
 
 .text-center {
@@ -1249,6 +1370,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[0\.625rem\] {
   font-size: 0.625rem;
+}
+
+.text-\[1\.563rem\] {
+  font-size: 1.563rem;
 }
 
 .text-\[2\.5rem\] {
@@ -1338,6 +1463,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-\[\#4F5665\] {
+  --tw-text-opacity: 1;
+  color: rgb(79 86 101 / var(--tw-text-opacity));
+}
+
 .line-through {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
@@ -1391,9 +1521,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: 80px;
   }
 
+  .md\:top-\[100px\] {
+    top: 100px;
+  }
+
   .md\:mx-1 {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .md\:mt-0 {
@@ -1410,6 +1554,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:ml-3 {
     margin-left: 0.75rem;
+  }
+
+  .md\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .md\:mt-\[-100px\] {
+    margin-top: -100px;
   }
 
   .md\:block {
@@ -1432,6 +1584,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 657px;
   }
 
+  .md\:h-\[126px\] {
+    height: 126px;
+  }
+
   .md\:w-40 {
     width: 10rem;
   }
@@ -1450,6 +1606,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:w-\[2px\] {
+    width: 2px;
   }
 
   .md\:cursor-default {
@@ -1481,6 +1641,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-\[1\.938rem\] {
