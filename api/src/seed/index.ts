@@ -14,9 +14,13 @@ const SALT = process.env.SALT || '10';
 
 export async function seed() {
 
-  console.log('[server] Seeding data...')
-
+  
   // await AppDataSource.initialize().then(async () => {
+    
+    // Don't run if already seeded
+    if (await AppDataSource.manager.findOneBy(Company, { name: 'Company One'})) return;
+
+    console.log('[server] Seeding data...')
 
     const companyOne = new Company();
     companyOne.name = 'Company One'
