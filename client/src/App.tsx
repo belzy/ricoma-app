@@ -2,6 +2,7 @@ import React from "react";
 import {
   Home,
   Products,
+  About,
 } from './pages';
 import {
   Routes,
@@ -21,7 +22,7 @@ const App = (): React.ReactElement => (
 
       <Route path='/products' element={ <Products /> } />
 
-      <Route path='' element={ null } />
+      <Route path='/about' element={ <About /> } />
     </Routes>
     <Footer />
 

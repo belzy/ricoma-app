@@ -1564,6 +1564,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: -100px;
   }
 
+  .md\:mt-\[-80px\] {
+    margin-top: -80px;
+  }
+
+  .md\:mt-\[-60px\] {
+    margin-top: -60px;
+  }
+
   .md\:block {
     display: block;
   }

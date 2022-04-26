@@ -9,109 +9,117 @@ const Stars = require('../../assets/img/stars.png');
 const HeaderIconOne = require('../../assets/img/header-icon-1.svg');
 const HeaderIconTwo = require('../../assets/img/header-icon-2.svg');
 const HeaderIconThree = require('../../assets/img/header-icon-3.svg');
+const FormTopOne = require('../../assets/img/form-top-1.png');
+const FormTopTwo = require('../../assets/img/form-top-2.png');
 
 const Form: React.FC = () => {
 
   return (
 
-    <form className='bg-white p-7 rounded-b-[10px]'>
+    <div className=''>
 
-      <h3 className='text-primary-blue font-bold md:font-medium md:text-[1.938rem] text-2xl text-center mb-7'>Fill out the form to secure the best deal!</h3>
+      <img className='w-full hidden md:block' src={ FormTopOne.default } alt=''></img>
+      <img className='w-full md:hidden' src={ FormTopTwo.default } alt=''></img>
 
-      <div className='flex'>
+      <form className='bg-white p-7 rounded-b-[10px]'>
 
-        <div className='mr-1 flex-1'>
-          <label className='font-bold text-[#515152] ml-2'>First Name</label><br />
+        <h3 className='text-primary-blue font-bold md:font-medium md:text-[1.938rem] text-2xl text-center mb-7'>Fill out the form to secure the best deal!</h3>
 
-          <input 
-            name='first-name-input' 
-            type='text' 
-            placeholder='Enter your first name' 
-            className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
-          />
+        <div className='flex'>
+
+          <div className='mr-1 flex-1'>
+            <label className='font-bold text-[#515152] ml-2'>First Name</label><br />
+
+            <input 
+              name='first-name-input' 
+              type='text' 
+              placeholder='Enter your first name' 
+              className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
+            />
+          </div>
+
+          <div className='ml-1 flex-1'>
+            <label className='font-bold text-[#515152] ml-2'>Last Name</label><br />
+
+            <input 
+              name='last-name-input' 
+              type='text' 
+              placeholder='Enter your last name' 
+              className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
+            />
+          </div>
+
+          
+
         </div>
 
-        <div className='ml-1 flex-1'>
-          <label className='font-bold text-[#515152] ml-2'>Last Name</label><br />
+        <div className='flex mt-4'>
+          <div className='mr-1 flex-1'>
+            <label className='font-bold text-[#515152] ml-2'>Email Address</label><br />
 
-          <input 
-            name='last-name-input' 
-            type='text' 
-            placeholder='Enter your last name' 
-            className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
-          />
+            <input 
+              name='email-address-input' 
+              type='text' 
+              placeholder='Enter your email address' 
+              className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
+            />
+          </div>
+
+          <div className='ml-1 flex-1'>
+            <label className='font-bold text-[#515152] ml-2'>Phone Number</label><br />
+
+            <input 
+              name='phone-phone-input' 
+              type='text' 
+              placeholder='Enter your phone number' 
+              className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
+            />
+          </div>
         </div>
 
-        
+        <div className='flex mt-4'>
 
-      </div>
+          <div className='flex-1'>
+            <label className='font-bold text-[#515152] ml-2'>Country</label><br />
 
-      <div className='flex mt-4'>
-        <div className='mr-1 flex-1'>
-          <label className='font-bold text-[#515152] ml-2'>Email Address</label><br />
+            <input 
+              name='country-input' 
+              type='text' 
+              placeholder='Enter your country' 
+              className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
+            />
+          </div>
 
-          <input 
-            name='email-address-input' 
-            type='text' 
-            placeholder='Enter your email address' 
-            className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
-          />
         </div>
 
-        <div className='ml-1 flex-1'>
-          <label className='font-bold text-[#515152] ml-2'>Phone Number</label><br />
+        <button type='submit' className='py-3 bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-full mt-5 font-bold text-[1.875rem] text-white rounded-[4px]'>Get a free quote</button>
 
-          <input 
-            name='phone-phone-input' 
-            type='text' 
-            placeholder='Enter your phone number' 
-            className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
-          />
-        </div>
-      </div>
+        <img className='mx-auto mt-5' src={ Logos.default } alt=''></img>
 
-      <div className='flex mt-4'>
+        <div className='p-5 bg-[#F3F4F5] w-full mt-4'>
 
-        <div className='flex-1'>
-          <label className='font-bold text-[#515152] ml-2'>Country</label><br />
+          <div className='flex justify-between mb-[-25px]'>
+            <h5 className='font-extrabold text-sm text-black'>Louis Marshall</h5>
 
-          <input 
-            name='country-input' 
-            type='text' 
-            placeholder='Enter your country' 
-            className='px-5 py-3 rounded-[5px] border border-[#315787] mt-1 w-full' 
-          />
+            <div className='bg-accent-orange w-[51px] h-[51px] relative top-[-34px] right-0 pt-[16px] pl-[11px]'><img src={ QuoteIcon.default } alt=''></img></div>
+          </div>
+
+          <p className='text-black leading-[24px] mb-4'>I love my Ri 1000. I got one a month or so ago and have printed about 1,000 shirts so far! Great product!</p>
+
+          <img src={ Stars.default } alt=''></img>
         </div>
 
-      </div>
+        <p className='text-center text-[0.625rem] text-[#515152] max-w-[415px] mx-auto mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus, faucibus sit viverra cras aliquam parturient. Interdum amet imperdiet sit feugiat donec. Proin.</p>
 
-      <button type='submit' className='py-3 bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-full mt-5 font-bold text-[1.875rem] text-white rounded-[4px]'>Get a free quote</button>
-
-      <img className='mx-auto mt-5' src={ Logos.default } alt=''></img>
-
-      <div className='p-5 bg-[#F3F4F5] w-full mt-4'>
-
-        <div className='flex justify-between mb-[-25px]'>
-          <h5 className='font-extrabold text-sm text-black'>Louis Marshall</h5>
-
-          <div className='bg-accent-orange w-[51px] h-[51px] relative top-[-34px] right-0 pt-[16px] pl-[11px]'><img src={ QuoteIcon.default } alt=''></img></div>
-        </div>
-
-        <p className='text-black leading-[24px] mb-4'>I love my Ri 1000. I got one a month or so ago and have printed about 1,000 shirts so far! Great product!</p>
-
-        <img src={ Stars.default } alt=''></img>
-      </div>
-
-      <p className='text-center text-[0.625rem] text-[#515152] max-w-[415px] mx-auto mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus, faucibus sit viverra cras aliquam parturient. Interdum amet imperdiet sit feugiat donec. Proin.</p>
-
-    </form>
+      </form>
+    </div>
 
   );
 };
 
 const HeaderBox: React.FC = () => {
   return (
-    <div className='max-w-[1300px] px-7 mx-auto relative top-[180px] md:top-[100px] mt-[-180px] md:mt-[-100px]'>
+    <div className='max-w-[1300px] px-7 mx-auto relative top-[180px] md:top-[100px] mt-[-180px] md:mt-[-60px]'>
       <div className='py-[37px] rounded-[10px] bg-white flex justify-center flex-col md:flex-row px-[24px] shadow-lg'>
 
         <div className='flex justify-center items-center flex-1'>
